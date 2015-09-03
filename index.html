@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<style>
+		#ding {
+			width: 200px;
+			height: 100px;
+			background-color: white;
+			border: solid 2px red;
+			color: red;
+			font-size: 40px;
+			font-weight: bold;
+			margin: 100px;
+		}
+
+		#ding:hover {
+			background-color: red;
+			color: white;
+			transition: 400ms;
+		}
+
+		#ding:focus {
+			outline: none;
+		}
+
+	</style>
+
+	<script>
+		var dingSound = new Audio();
+		dingSound.src = "http://www.soundjay.com/button/button-37.mp3";
+	</script>
+
+</head>
+
+<body>
+
+<span id="dummy"></span>
+
+<button id="ding" onclick="dingSound.play()">
+	DING!
+</button>
+
+</body>
+
+</html>
